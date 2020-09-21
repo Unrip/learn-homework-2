@@ -26,7 +26,6 @@ def str_2_datetime(date_string):
     Эта функция вызывается автоматически при запуске скрипта в консоли
     В ней надо заменить pass на ваш код
     """
-    date_string = '01/01/25 12:10:03.234567'
     dt_obj = datetime.strptime(date_string, '%d/%m/%y %H:%M:%S.%f')
     return dt_obj
 
