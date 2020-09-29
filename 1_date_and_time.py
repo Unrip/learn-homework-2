@@ -16,9 +16,11 @@ def print_days():
     В ней надо заменить pass на ваш код
     """
     today = date.today()
-    print(f'Вчера было {today - timedelta(days=1)}.')
+    yesterday = today - timedelta(days=1)
+    thirty_days_ago = today - timedelta(days=30)
+    print(f'Вчера было {yesterday}.')
     print(f'Сегодня - {today}.')
-    print(f'А 30 дней назад было {today - timedelta(days=30)}.')
+    print(f'А 30 дней назад было {thirty_days_ago}.')
 
 
 def str_2_datetime(date_string):
